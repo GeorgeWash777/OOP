@@ -1,17 +1,4 @@
-#include <iostream>
 #include "include/lab1.h"
-
-
-std::string intToBinary(long long n) {
-    std::string binary = "";
-    for(int i = 0; i < 32; i++) {
-    if(n & (1 << i))
-        binary = "1" + binary;
-    else
-        binary = "0" + binary;
-    }
-    return binary;
-}
 
 int main() {
     long long n;
